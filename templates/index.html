@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        window.onload=function()
+        {
+            if(document.readyState=="complete")
+            {
+                document.getElementById("testInput").focus();
+            }
+        }
+    </script>
+</head>
+
+<body>
+<img src="{{file_name}}" alt="text" height="200" width="700">
+<form method="post">
+    code: <input type="text" name="code1" value="" id="testInput"><br>
+    <input type="hidden" name="code2" value="{{name}}"><br>
+    <input type="submit" value="提交">
+</form>
+
+</body>
+</html>
